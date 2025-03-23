@@ -1,0 +1,34 @@
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.line-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 15px;
+
+}
+.full-cont{
+    width: 100%;
+}
+#del{
+    color: red;
+    cursor: pointer;
+}
+.all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.trash{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
