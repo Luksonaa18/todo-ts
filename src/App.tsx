@@ -1,10 +1,10 @@
 import { FormEvent, useRef, useState, useEffect } from "react";
 import "./App.css";
 import logo1 from "../src/assets/asd.png";
-import Todo, { Todos, TodoProps } from "./componnents/Todo";
+import Todo, { Todos } from "./componnents/Todo";
 import { FaMoon } from "react-icons/fa";
 import { FaSun } from "react-icons/fa";
-import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 type Theme = {
   color: string;
   background: string;
@@ -27,16 +27,6 @@ const nreTheme: Theme = {
   height: "50px",
   border: "1px solid black",
 };
-
-const Button = styled.button`
-  color: ${(props) => props.theme.color};
-  background: ${(props) => props.theme.background};
-  width: ${(props) => props.theme.width};
-  height: ${(props) => props.theme.height};
-  cursor: pointer;
-  border:${(props) => props.theme.border}
-  transition: background 0.3s ease; /* Smooth transition for background color */
-`;
 
 const GlobalStyle = createGlobalStyle`
   body {

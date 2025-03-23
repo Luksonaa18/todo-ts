@@ -1,9 +1,7 @@
 import "./Todo.css";
 import { GoTrash } from "react-icons/go";
-import logo from "../assets/asd.png";
 import Checkbox from "@mui/material/Checkbox";
-import { FaMoon } from "react-icons/fa";
-import { FaSun } from "react-icons/fa";
+
 
 export type Todos = {
   text: string;
